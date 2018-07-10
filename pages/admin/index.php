@@ -3,12 +3,12 @@ session_start();
 if(!isset($_SESSION['username'])){
     die("<b>Oops!</b> Access Failed.
     <p>Sistem Logout. Anda harus melakukan Login kembali.</p>
-    <button type='button' onclick=location.href='index.php'>Back</button>");
+    <button type='button' onclick=location.href='../../index.php'>Back</button>");
 }
 if($_SESSION['hak_akses']!="Admin"){
     die("<b>Oops!</b> Access Failed.
     <p>Anda Bukan Admin.</p>
-    <button type='button' onclick=location.href='index.php'>Back</button>");
+    <button type='button' onclick=location.href='../../index.php'>Back</button>");
 }
 include_once 'header.php';
 ?>
